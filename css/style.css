@@ -1,0 +1,51 @@
+img{
+    width: 220px;
+    height: 300px;
+}
+ul{
+    list-style: none;
+}
+.main_slide{
+    position: relative;
+    margin-top: 100px;
+    
+}
+.pre_button , .next_button{
+    font-size: 50px;
+    color: #cc07ed;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: all linear 1s;
+    z-index: 10;
+}
+.pre_button{
+    left: -5%;
+}
+.main_slide:hover .pre_button{
+    left: 0;
+}  
+.next_button{
+    right: -5%;
+}
+.main_slide:hover .next_button{
+    right: 0;
+}  
+.main_slide ul{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+}
+.main_slide ul li button{
+    width: 15px;
+    height: 15px;
+    font-size: 0;
+    border: none;
+    background: gray;
+    border-radius: 100%;
+}
+.main_slide ul .slick-active button{
+    background: rgb(5, 70, 59);
+
+}
+/*  */
